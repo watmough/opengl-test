@@ -1009,7 +1009,7 @@ main(int argc, char **argv)
 
   if (glutGet(GLUT_WINDOW_STENCIL_SIZE) < 3) {
     printf("halomagic: Sorry, I need at least 3 bits of stencil.\n");
-    exit(1);
+//    exit(1);
   }
 
   /* Register GLUT callbacks. */

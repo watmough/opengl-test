@@ -40,6 +40,7 @@
 #include <string.h>
 #include <math.h>       /* for cos(), sin(), and sqrt() */
 #include <GL/glut.h>    /* OpenGL Utility Toolkit header */
+#include <windows.h>
 
 /* Some <math.h> files do not define M_PI... */
 #ifndef M_PI
@@ -801,14 +802,14 @@ main(int argc, char **argv)
 #if 1
   /* In GLUT 4.0, you'll be able to do this an be sure to
      get 2 bits of stencil if the machine has it for you. */
-  glutInitDisplayString("samples stencil>=2 rgb double depth");
+  glutInitDisplayString("samples stencil~2 rgb double depth");
 #endif
 
   glutCreateWindow("Shadowy Leapin' Lizards");
 
   if (glutGet(GLUT_WINDOW_STENCIL_SIZE) <= 1) {
     printf("dinoshade: Sorry, I need at least 2 bits of stencil.\n");
-//    exit(1);
+    exit(1);
   }
 
   /* Register GLUT callbacks. */

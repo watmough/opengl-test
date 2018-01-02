@@ -16,7 +16,7 @@
             "name": "C++ Launch (gdb-win lldb-osx)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "c:/workarea/advent-of-code-2017/a.exe",
+            "program": "c:/workarea/opengl-test/a.exe",
             "args": [""],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",

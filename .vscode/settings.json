@@ -14,5 +14,6 @@
         "bitset": "cpp",
         "xlocale": "cpp",
         "xlocmon": "cpp"
-    }
+    },
+    "editor.detectIndentation": false,
 }
